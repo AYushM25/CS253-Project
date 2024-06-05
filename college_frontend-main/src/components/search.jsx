@@ -19,7 +19,7 @@ const Search = () => {
       
       // Make API request to search for students
       // You need to replace the API endpoint with your actual endpoint
-      const response = await fetch(`https://college-backend-tyqu.onrender.com/users/search?college=${data.college}&branch=${data.major}`);
+      const response = await fetch(`http://localhost:5000/users/search?college=${data.college}&branch=${data.major}`);
       const searchData = await response.json();
       setSearchResults(searchData);
     } catch (error) {
