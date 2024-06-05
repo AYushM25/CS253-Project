@@ -61,12 +61,12 @@ const CollegeCompare = () => {
         return;
     }
     try {
-        const collegeResponse = await axios.get('https://college-backend-tyqu.onrender.com/users/compare', {
+        const collegeResponse = await axios.get('http://localhost:5000/users/compare', {
             params: { college1, college2 },
         });
         setCollegeData(collegeResponse.data);
 
-        const userOpinionResponse = await axios.get('https://college-backend-tyqu.onrender.com/users/opinion', {
+        const userOpinionResponse = await axios.get('http://localhost:5000/users/opinion', {
             params: { college1, college2, branch1, branch2 },
         });
 
