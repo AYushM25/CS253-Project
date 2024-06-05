@@ -9,7 +9,7 @@ function CollegeGoingProfile({ user }) {
 
   useEffect(() => {
     // Fetch posts authored by the user
-    axios.get(`https://college-backend-tyqu.onrender.com/posts/user/${user._id}`)
+    axios.get(`http://localhost:5000/posts/user/${user._id}`)
       .then(response => {
         setPosts(response.data);
       })
@@ -88,7 +88,7 @@ function ProfileDataSection({ user }) {
 
   const handleNameSubmit = () => {
     axios
-      .patch(`https://college-backend-tyqu.onrender.com/users/profile/updateName/${user.email}`, { name: newName })
+      .patch(`http://localhost:5000/users/profile/updateName/${user.email}`, { name: newName })
       .then(response => {
         console.log(response.data);
         setIsEditingName(false);
@@ -101,7 +101,7 @@ function ProfileDataSection({ user }) {
   };
   const handleUsernameSubmit = () => {
     axios
-      .patch(`https://college-backend-tyqu.onrender.com/users/profile/updateUsername/${user.email}`, { username: newUsername })
+      .patch(`http://localhost:5000/users/profile/updateUsername/${user.email}`, { username: newUsername })
       .then(response => {
         console.log(response.data);
         setIsEditingUsername(false);
@@ -117,7 +117,7 @@ function ProfileDataSection({ user }) {
 
   const handleCollegeSubmit = () => {
     axios
-      .patch(`https://college-backend-tyqu.onrender.com/users/profile/updateCollege/${user.email}`, { college: newCollege })
+      .patch(`http://localhost:5000/users/profile/updateCollege/${user.email}`, { college: newCollege })
       .then(response => {
         console.log(response.data);
         setIsEditingCollege(false);
@@ -131,7 +131,7 @@ function ProfileDataSection({ user }) {
 
   const handleBranchSubmit = () => {
     axios
-      .patch(`https://college-backend-tyqu.onrender.com/users/profile/updateBranch/${user.email}`, { branch: newBranch })
+      .patch(`http://localhost:5000/users/profile/updateBranch/${user.email}`, { branch: newBranch })
       .then(response => {
         console.log(response.data);
         setIsEditingBranch(false);
@@ -145,7 +145,7 @@ function ProfileDataSection({ user }) {
 
   const handleYearSubmit = () => {
     axios
-      .patch(`https://college-backend-tyqu.onrender.com/users/profile/updateYear/${user.email}`, { year: newYear })
+      .patch(`http://localhost:5000/users/profile/updateYear/${user.email}`, { year: newYear })
       .then(response => {
         console.log(response.data);
         setIsEditingYear(false);
@@ -328,7 +328,7 @@ function Opinions({ user }) {
 
   const handleAcademicOpinionSubmit = () => {
     axios
-      .patch(`https://college-backend-tyqu.onrender.com/users/profile/updateAcademicOpinion/${user.email}`, { AcademicOpinion: newAcademicOpinion })
+      .patch(`http://localhost:5000/users/profile/updateAcademicOpinion/${user.email}`, { AcademicOpinion: newAcademicOpinion })
       .then(response => {
         console.log(response.data);
         setIsEditingAcademicOpinion(false);
@@ -341,7 +341,7 @@ function Opinions({ user }) {
   };
   const handleNonAcademicOpinionSubmit = () => {
     axios
-      .patch(`https://college-backend-tyqu.onrender.com/users/profile/updateNonAcademicOpinion/${user.email}`, { NonAcademicOpinion: newNonAcademicOpinion })
+      .patch(`http://localhost:5000/users/profile/updateNonAcademicOpinion/${user.email}`, { NonAcademicOpinion: newNonAcademicOpinion })
       .then(response => {
         console.log(response.data);
         setIsEditingNonAcademicOpinion(false);
@@ -354,7 +354,7 @@ function Opinions({ user }) {
   };
   const handlePlacementOpinionSubmit = () => {
     axios
-      .patch(`https://college-backend-tyqu.onrender.com/users/profile/updatePlacementOpinion/${user.email}`, { PlacementOpinion: newPlacementOpinion })
+      .patch(`http://localhost:5000/users/profile/updatePlacementOpinion/${user.email}`, { PlacementOpinion: newPlacementOpinion })
       .then(response => {
         console.log(response.data);
         setIsEditingPlacementOpinion(false);
@@ -367,7 +367,7 @@ function Opinions({ user }) {
   };
   const handleOverallOpinionSubmit = () => {
     axios
-      .patch(`https://college-backend-tyqu.onrender.com/users/profile/updateOverallOpinion/${user.email}`, { OverallOpinion: newOverallOpinion })
+      .patch(`http://localhost:5000/users/profile/updateOverallOpinion/${user.email}`, { OverallOpinion: newOverallOpinion })
       .then(response => {
         console.log(response.data);
         setIsEditingOverallOpinion(false);
