@@ -9,7 +9,7 @@ function CollegeSearchingProfile({ user }) {
 
     useEffect(() => {
         // Fetch posts authored by the user
-        axios.get(`https://college-backend-tyqu.onrender.com/posts/user/${user._id}`)
+        axios.get(`http://localhost:5000/posts/user/${user._id}`)
             .then(response => {
                 setPosts(response.data);
             })
@@ -73,7 +73,7 @@ function ProfileSection({user}){
 
     const handleNameSubmit = () => {
         axios
-    .patch(`https://college-backend-tyqu.onrender.com/users/profile/updateName/${user.email}`, { name: newName })
+    .patch(`http://localhost:5000/users/profile/updateName/${user.email}`, { name: newName })
     .then(response => {
       console.log(response.data);
       setIsEditingName(false);
@@ -86,7 +86,7 @@ function ProfileSection({user}){
 };
       const handleUsernameSubmit = () => {
         axios
-          .patch(`https://college-backend-tyqu.onrender.com/users/profile/updateUsername/${user.email}`, { username: newUsername })
+          .patch(`http://localhost:5000/users/profile/updateUsername/${user.email}`, { username: newUsername })
           .then(response => {
             console.log(response.data);
             setIsEditingUsername(false);
@@ -178,7 +178,7 @@ function Opinions({ user }) {
   
   const handleAcademicOpinionSubmit = () => {
     axios
-      .patch(`https://college-backend-tyqu.onrender.com/users/profile/updateAcademicOpinion/${user.email}`, { AcademicOpinion: newAcademicOpinion })
+      .patch(`http://localhost:5000/users/profile/updateAcademicOpinion/${user.email}`, { AcademicOpinion: newAcademicOpinion })
       .then(response => {
         console.log(response.data);
         setIsEditingAcademicOpinion(false);
