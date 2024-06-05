@@ -19,6 +19,13 @@ Database is deployed on MongoDB Atlas.
 3. npm
 4. Web Browser
 
+# CodeBase Navigation
+Frontend : 
+The Front-end code is present in "/college_frontend-main". The "src" folder contains all the React source code files.
+
+Backend :
+The Back-end code is present in "/college_backend-main".
+
 # Installation
 The user need to add a .env file in the backend folder containing the following things : 
 1. jwtPrivateKey = "Your Own Private Key"
