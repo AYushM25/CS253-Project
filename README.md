@@ -1,5 +1,5 @@
 # CS253 Project
-CS253 Course Project done in 2nd semester 2023-2024 under Prof. Indranil Saha.
+CS253 Course Project done in 2nd semester 2023-2024 under Prof. Indranil Saha at IIT Kanpur.
 
 # College Pathfinder
 College PathFinder is a comprehensive educational search and recommendation platform designed to assist students in finding suitable colleges based on a wide range of criteria. The product encompasses various features to enhance the user experience and streamline the college selection process. It allows users to set a specific All India Rank (AIR) range, helping them narrow their options based on academic performance. College PathFinder ensures that students are presented with colleges that align with their ranking, optimizing the chances of finding a suitable educational institution.
