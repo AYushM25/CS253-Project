@@ -1,0 +1,49 @@
+.Nav {
+  width: 100%;
+  height: 5rem;
+  list-style: none;
+  background-color: #8BB2B2;
+  display: flex;
+  justify-content: space-between; /* Align items at the start and end */
+  align-items: center; /* Vertically center items */
+  padding: 0 2rem; /* Add padding to the sides */
+}
+
+.Nav ul {
+  color: #fff;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.nav-item,
+.log_out {
+  margin-right: 2rem;
+  transition: background-color 0.3s, border-radius 0.3s;
+  padding: 0.8rem;
+}
+
+.nav-item:hover,
+.log_out:hover {
+  border-radius: 20px;
+  background-color: #eee;
+}
+
+.Nav li {
+  padding: 0.8rem;
+}
+
+.Nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Nav li:hover,
+.Nav li:focus,
+.Nav li:hover a,
+.Nav li:focus a {
+  background-color: #eee;
+  color: black;
+}

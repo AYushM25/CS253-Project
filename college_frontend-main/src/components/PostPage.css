@@ -1,0 +1,5 @@
+.post-description {
+    width: 100%;
+    overflow-wrap: break-word; /* Ensures that long words are broken and wrapped */
+  }
+  

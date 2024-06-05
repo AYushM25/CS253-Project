@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%; /* Ensure the image fills the width of the carousel */
+    height: 300px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+  }
+  
+
+.home{
+    background-color: white;
+}
+
+.up {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    background-color: #8BB2B2;
+}
+
+@media(max-width: 1186px){
+    .up{
+      grid-template-columns: 1fr;
+    }
+    .home-main-text{
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+  }
+
+.image-container {
+    position: relative;
+}
+
+.home_img {
+    width: 100%;
+    height: 640px;
+}
+
+.home-main-text {
+    margin-top: 80px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.home-main-text h1 {
+    font-size: 100px;
+    color: transparent; 
+    background-image: linear-gradient(to right, #04233f, #225c80, black);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.welcome {
+    font-size: 20px;
+    margin-top: 10px;
+    color: black;
+    font-style: italic;
+}
+
+.home-tag-line {
+    font-size: 40px;
+    margin-top: 60px;
+    color: rgb(33, 12, 1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.h-icon img {
+    width: 100%; 
+    height: 680px;
+    display: block; 
+}
+.custom-header {
+    background-color: green; /* Set the background color to green */
+    color: white; /* Set the text color to white */
+  }
+  
+
+/* 
+.up {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+.home_img {
+    width: 100%;
+    height: 680px;
+}
+
+.home-main-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.home-main-text h1 {
+    font-size: 100px;
+    color: transparent; 
+    background-image: linear-gradient(to right, #04233f, #225c80, black);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.welcome {
+    font-size: 20px;
+    margin-top: 10px;
+    color: black;
+    font-style: italic;
+}
+
+.home-tag-line {
+    font-size: 40px;
+    margin-top: 20px;
+    color: rgb(33, 12, 1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.h-icon img {
+    width: 100%; 
+    height: 680px;
+    display: block; 
+} */
+/* Here new Part Comes*/
+
+.news{
+    border-style: solid;
+    margin-top: 40px;
+}
+
+.top-colleges-text {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 5px;
+
+}
+
+.top-colleges-text span {
+    border-bottom: 2px solid red;     /* Red underline */
+}
+
+.top-colleges-carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    width: 600px; /* Adjust as needed */
+    height: 400px;
+    margin: 0 auto;
+}
+
+.slide {
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 7px #666;
+    width: 100%;
+    height: 100%;
+    margin: 0 0.5rem;
+}
+
+.slide-hidden {
+    display: none;
+}
+
+.arrow {
+    position: absolute;
+    filter: drop-shadow(0px 0px 5px #555);
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 5rem;
+}
+
+.arrow-right {
+    right: 5rem;
+}
+
+.text-overlay{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.box{
+    background-color: lightgreen;
+    height: 300px;
+}
+
+.box h3{
+    text-align: center;
+}
+
+.container-footer{
+    margin:auto;
+    margin-top: 40px;
+    padding: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0 px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    }
+}
+
+/*News*/
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 1300px;
+}
+
+.news-summaries {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.tab-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.tab-header h2 {
+    font-size: 24px;
+}
+
+.tab-content {
+    overflow: hidden;
+    height: 300px; 
+}
+
+.news-item {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    animation: scroll 10s linear infinite; 
+    background-color: #f8f9fa; 
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.news-item h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    color: #666;
+    font-size: 16px;
+}

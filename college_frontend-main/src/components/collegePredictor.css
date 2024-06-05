@@ -1,0 +1,112 @@
+.header-text{
+    margin: 40px;
+  }
+.whiteback{
+    margin-bottom: 40px;
+}
+  .input-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 20px;
+  }
+  
+  @media (min-width: 1000px){
+    .input-section{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media (min-width: 700px) and (max-width: 1000px){
+    .input-section{
+      grid-template-columns: 1fr 1fr;
+    }
+
+    
+  }
+  @media (max-width: 700px){
+    .input-section{
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /*For Input buttons*/
+  .form__group{
+    margin: 20px;
+    padding: 5px 0 0;
+    margin-top: 10px;
+    width: 75%;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size : 15px;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .submit-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  
+  }
+  .submit-button-text{
+    font-size: 20px;
+    border-radius: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 150px;
+  }
+  .submit-button-text:hover{
+    opacity: 50%;
+    color: red;
+  }
+  /*for input buttons on left and right*/
+  
+  .CollegePredictor{
+      margin-top: 40px;
+      margin-right:15px;
+      margin-left:15px;
+      padding: 20px;
+      padding-top: 5px;
+      border-radius: 20px;
+      border-style: solid;
+  }
+  
+  .available_data{
+      display: grid;
+      border-style: solid;
+      border-color: lightslategray;
+      border-radius: 10px;
+  }
+  
+  .available_data_rows{
+      margin-top: 15px; 
+      margin-left: 5px;
+      color: darkgrey;
+  }
+  
+  .available-data-values{
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 5px;
+  
+  }
+
+  .show-more-button{
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+  .show-more-button:hover{
+    opacity: 40%;
+  }

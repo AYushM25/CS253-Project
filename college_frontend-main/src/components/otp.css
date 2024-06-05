@@ -1,0 +1,116 @@
+.login-main {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  margin: -10px;
+  height: 800px;
+  background-color: #8BB2B2;
+}
+
+.container-left {
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  color: white;
+  font-family: serif;
+}
+
+.container-left-top img {
+  width: 40px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.container-left-top h1 {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.container-left-top p {
+  margin: 40px;
+  margin-left: 30px;
+  margin-top: 60px;
+  font-size: 18px;
+}
+
+.container-image {
+  margin-left: 10%;
+  transform: rotate(5deg);
+}
+
+.container-right {
+  padding-left: 80px;
+  padding-top: 80px;
+  font-family: serif;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.container-right-heading {
+  color: gray;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-right-text {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center; /* Center the text */
+}
+
+.container-right-text p {
+  width: 60%;
+  color: gray;
+  margin: 0 auto; /* Center the paragraph */
+}
+
+.otp-div {
+  display: flex;
+  justify-content: center; /* Center the OTP input fields */
+  width: 80%;
+  margin: 0 auto; /* Center the OTP input field container */
+  margin-bottom: 20px;
+}
+
+.otp-button {
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 60px; /* Adjust width for individual OTP input fields */
+  height: 60px; /* Adjust height for individual OTP input fields */
+  margin-right: 20px;
+}
+
+.container-right button {
+  margin-top: 40px;
+  height: 45px;
+  width: 78%;
+  background-color: #258de6;
+  color: white;
+  letter-spacing: 1px;
+  border: none;
+  display: block;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 0 auto; /* Center the button */
+}
+
+@media (max-width: 1000px) {
+  .container-right {
+      flex-basis: auto;
+  }
+
+  .container-main {
+      display: block;
+  }
+}
+
+button:hover {
+  filter: brightness(95%);
+}
+
+button:active {
+  transform: scale(0.98);
+}

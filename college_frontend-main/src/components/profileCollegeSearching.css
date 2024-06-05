@@ -1,0 +1,128 @@
+
+
+.profile-container1{
+    background: linear-gradient(to bottom, #00f26182 0%, #0576e66d 100%);
+    margin-top: -10px;
+    padding-top: 10px;
+    padding-bottom: 80px;
+}
+.profile1{
+    margin-top: 30px;
+    display:grid;
+    column-gap: 50px;
+    margin-right:20px;
+    background: linear-gradient(to bottom, #00f26182 0%, #0576e66d 100%);
+}
+
+.profile_details{
+    display:grid;
+    grid-template-rows: 0.5fr auto auto;
+    row-gap: 20px;
+    margin-left: 30px;
+}
+
+.profile_photo{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.photo{
+    width: 80px;
+    border-radius: 40px;
+    display: inline-block;
+}
+
+.upload_photo:hover{
+    opacity: 40%;
+}
+
+.profile_verified{
+    margin-top: 30px;
+    margin-left: 3px;
+    width: 100px;
+    text-align: center;
+    border-radius: 16px;
+    padding: 2px;
+    background-color: greenyellow;
+}
+
+.profile_data{
+    border-style: solid;
+    border-color: lightslategray;
+    border-radius: 10px;
+}
+
+.profile_data_rows{
+    margin-top: 5px; 
+    margin-left: 5px;
+    color: darkgrey;
+}
+
+.profile-data-values{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
+
+}
+.edit-button{
+    margin-right: 20px;
+    width:60px;
+    padding:5px;
+    border-radius: 15px;
+    background-color: white;
+    cursor: hand;
+}
+
+.edit-button:hover{
+    opacity: 40%;
+}
+.bookmarks{
+    border-style: solid;
+    border-color: lightslategray;
+    border-radius: 10px;
+}
+
+.professional{
+    border-style: solid;
+    border-color: lightslategray;
+    border-radius: 10px;   
+}
+
+.opinions1{
+    border-style: solid;
+    border-color: lightslategray;
+    border-radius: 10px;   
+    margin-left: 30px;
+}
+
+.opinions_data {
+    border-style: solid;
+    border-color: lightslategray;
+    border-radius: 10px;
+}
+
+.opinions_data_rows {
+    margin-top: 5px; 
+    margin-left: 5px;
+    color: darkgrey;
+}
+
+.opinions-data-values {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+@media (max-width: 1200px){
+    .profile{
+        display: block;
+        margin-bottom: 30px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .opinions {
+        margin-top: 20px;
+        margin-left: 30px;
+        width: 97%;
+      }
+}
