@@ -12,7 +12,7 @@ function AdminProfile({ user }) {
     const postsPerPage = 1;
 
     useEffect(() => {
-        axios.get('https://college-backend-tyqu.onrender.com/users/user-count')
+        axios.get('http://localhost:5000/users/user-count')
             .then(response => {
                 setUserCounts(response.data);
             })
@@ -20,7 +20,7 @@ function AdminProfile({ user }) {
                 console.error('Error fetching user counts:', error);
             });
 
-        axios.get(`https://college-backend-tyqu.onrender.com/posts/user/${user._id}`)
+        axios.get(`http://localhost:5000/posts/user/${user._id}`)
             .then(response => {
                 setAdminPosts(response.data);
             })
@@ -167,7 +167,7 @@ function ProfileDataSection({ user }) {
 
   const handleNameSubmit = () => {
     axios
-      .patch(`https://college-backend-tyqu.onrender.com/users/profile/updateName/${user.email}`, { name: newName })
+      .patch(`http://localhost:5000/users/profile/updateName/${user.email}`, { name: newName })
       .then(response => {
         console.log(response.data);
         setIsEditingName(false);
@@ -180,7 +180,7 @@ function ProfileDataSection({ user }) {
   };
   const handleUsernameSubmit = () => {
     axios
-      .patch(`https://college-backend-tyqu.onrender.com/users/profile/updateUsername/${user.email}`, { username: newUsername })
+      .patch(`http://localhost:5000/users/profile/updateUsername/${user.email}`, { username: newUsername })
       .then(response => {
         console.log(response.data);
         setIsEditingUsername(false);
