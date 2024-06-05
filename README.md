@@ -36,7 +36,7 @@ The user need to add a .env file in the backend folder containing the following 
 
 For running the Frontend Part -
 
-1. Navigate to "/client".
+1. Navigate to "/college_frontend-main".
 2. Open the Command Line Terminal in this folder.
 3. Run the following commands one by one -
 4. npm install --force
@@ -47,7 +47,7 @@ The webpage will automatically open in localhost:3000.
 If it doesn't automatically open, the user can open it manually.
 
 For the Back-end part,
-1. Navigate to "/server.”
+1. Navigate to "/college_backend-main.”
 2. Open the Command Line Terminal in this folder.
 3. Run the following commands one by one.
 4. npm install --force
