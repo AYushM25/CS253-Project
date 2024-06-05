@@ -1,7 +1,7 @@
 export const api = {  
-  tagsEndPoint: 'https://college-backend-tyqu.onrender.com/tags/',
-  usersEndPoint: 'https://college-backend-tyqu.onrender.com/users/',
-  postsEndPoint: 'https://college-backend-tyqu.onrender.com/posts/',
-  repliesEndPoint: 'https://college-backend-tyqu.onrender.com/reply/',
-  otpEndPoint: 'https://college-backend-tyqu.onrender.com/otp/',
+  tagsEndPoint: 'http://localhost:5000/tags/',
+  usersEndPoint: 'http://localhost:5000/users/',
+  postsEndPoint: 'http://localhost:5000/posts/',
+  repliesEndPoint: 'http://localhost:5000/reply/',
+  otpEndPoint: 'http://localhost:5000/otp/',
 }
