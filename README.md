@@ -53,6 +53,6 @@ For the Back-end part,
 4. npm install --force
 5. npm start
 (if there is some error after running npm start, then type npm uninstall bcrypt and then npm
-install bcrypt)
+install bcrypt and run npm start again)
 
 The user can test the APIs on localhost (http://localhost:5000/).
